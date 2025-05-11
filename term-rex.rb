@@ -5,21 +5,21 @@
 class TermRex < Formula
   desc "A terminal-based dinosaur runner game inspired by Chrome's offline game"
   homepage "https://github.com/jianongHe/term-rex"
-  version "0.1.7"
+  version "0.1.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jianongHe/Term-Rex/releases/download/v0.1.7/term-rex_0.1.7_darwin_amd64.tar.gz"
-      sha256 "cac418b76f15dd96d4b2622ed575718b4d10699d0277dea37c1f73538b1082b0"
+      url "https://github.com/jianongHe/Term-Rex/releases/download/v0.1.8/term-rex_0.1.8_darwin_amd64.tar.gz"
+      sha256 "ac0496d1178cea5cbe8237b66835cb35be3e50b47b7fabc2daff81e39f5e2d5e"
 
       def install
         bin.install "term-rex"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jianongHe/Term-Rex/releases/download/v0.1.7/term-rex_0.1.7_darwin_arm64.tar.gz"
-      sha256 "a0ffe7454e359209f51653c81b6d0db4fa1068a39e7678947618bd29b370cdf3"
+      url "https://github.com/jianongHe/Term-Rex/releases/download/v0.1.8/term-rex_0.1.8_darwin_arm64.tar.gz"
+      sha256 "858e590bcf9edabbc63521b08633019a81ec57c5d8c04967441c17e7d89986de"
 
       def install
         bin.install "term-rex"
@@ -29,15 +29,15 @@ class TermRex < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/jianongHe/Term-Rex/releases/download/v0.1.7/term-rex_0.1.7_linux_amd64.tar.gz"
-      sha256 "b775b9e0db8a37778f08321071837888e3758b4fe58e241a0c7a7e84749250a1"
+      url "https://github.com/jianongHe/Term-Rex/releases/download/v0.1.8/term-rex_0.1.8_linux_amd64.tar.gz"
+      sha256 "63d848e76d1859d858dbb5eca4bc274013a9e5895d929617d4079b3be4a3de11"
       def install
         bin.install "term-rex"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/jianongHe/Term-Rex/releases/download/v0.1.7/term-rex_0.1.7_linux_arm64.tar.gz"
-      sha256 "cdcb8dbb6444da675638ede76ad80a1f114246290e994c0a13c2872e0cf318ef"
+      url "https://github.com/jianongHe/Term-Rex/releases/download/v0.1.8/term-rex_0.1.8_linux_arm64.tar.gz"
+      sha256 "126cdafcdbcc7c19a913104cb40b79197dc0abf3c8feca048a6957822354052b"
       def install
         bin.install "term-rex"
       end
