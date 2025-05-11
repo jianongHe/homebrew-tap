@@ -11,7 +11,7 @@ class TermRex < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/jianongHe/Term-Rex/releases/download/v0.1.3/term-rex_0.1.3_darwin_amd64.tar.gz"
-      sha256 "1f13a038e09d09e1b8d76a7707a51264215db2690396abfedb6468a764bc759c"
+      sha256 "e8ec8e1c12be05a7c87e3e0da78874e07412d035d4eec2431a400625e034c8a6"
 
       def install
         bin.install "term-rex"
@@ -19,7 +19,7 @@ class TermRex < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/jianongHe/Term-Rex/releases/download/v0.1.3/term-rex_0.1.3_darwin_arm64.tar.gz"
-      sha256 "5598dd1db9f0b71b2d8159f54d0f77f647c002235a30001d1ae93f1821c270ed"
+      sha256 "57e0b771c01a7a8ded499df838ab63048ef22be09d1e7e7829ccc469ccb3ecfa"
 
       def install
         bin.install "term-rex"
@@ -30,14 +30,14 @@ class TermRex < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://github.com/jianongHe/Term-Rex/releases/download/v0.1.3/term-rex_0.1.3_linux_amd64.tar.gz"
-      sha256 "b7d0e1b656c8888588e1ec516b6dcd3be835a3e7018f245da943726464a5a9a5"
+      sha256 "30880eb53f99316491f053b35c4aabf81789e17ffc0cd50336ad972954fb04b2"
       def install
         bin.install "term-rex"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://github.com/jianongHe/Term-Rex/releases/download/v0.1.3/term-rex_0.1.3_linux_arm64.tar.gz"
-      sha256 "473445e99d3f85df1d67285efe0089b3fd6be2224e1f33be73fe745e09749b8a"
+      sha256 "ec0d4cb62ab252dc0390f734c08aba9a22455c9a8fcc1e8011a9620531cd0899"
       def install
         bin.install "term-rex"
       end
